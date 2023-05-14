@@ -1,7 +1,7 @@
 from transforms import *
 from math import pi
 
-with open("teapot.off") as f:
+with open("./Appendix C/teapot.off") as f:
     lines = f.readlines()
 
 vertex_count, face_count, edge_count = map(int,lines[1].split())
@@ -27,7 +27,8 @@ def load_polygons():
 
 def triangulate(poly):
     if len(poly) < 3:
-        raise ArgumentException("polygons must have at least 3 vertices")
+        #raise ArgumentException("polygons must have at least 3 vertices")
+        raise Exception("polygons must have at least 3 vertices")
     # elif len(poly) == 3:
     #     return [poly]
     else:

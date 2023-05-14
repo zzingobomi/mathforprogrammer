@@ -8,6 +8,11 @@ jupyter = "*"
 ipykernel = "*"
 matplotlib = "*"
 scipy = "*"
+fonttools = "*"
+platformdirs = "*"
+tornado = "*"
+pygame = "*"
+pyopengl = "*"
 
 [dev-packages]
 
